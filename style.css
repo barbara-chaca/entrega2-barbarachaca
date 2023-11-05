@@ -1,0 +1,343 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Nunito&family=Raleway&family=Ubuntu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{font-family: 'Ubuntu', sans-serif;
+} 
+
+
+/*Header*/
+header{
+    background-color: #87aeb6;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    .nav-link{
+        text-decoration: none;
+        color: aliceblue;
+    }
+}
+
+
+/* Todos los Main */
+main{  
+    background-color: #ca9e3f;
+    padding-bottom: 3%;
+    
+    .arrow{
+        width: 60px;
+        position: fixed;
+        top: 40rem;
+        left: 90rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+
+/*Main Index*/
+.banner{
+    background-image: url(./imagenes/backgroundimageindex.png);
+    padding: 15% 0%;
+    background-size: cover;
+    background-position: center;      
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-style: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: -5px -3px 4px rgba(34, 34, 34, 0.925);
+}
+
+.col-md-4{
+    padding: 3% 2% 2% 1%;
+}
+
+.cardIndex{
+    background-color: #f1d79d;
+    box-shadow: rgb(104, 49, 11) 5px 7px 7px;
+
+    .card-title{        
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .cardIndexText{
+        text-align: center;
+    }
+}
+
+
+/* Main Productos */
+.mainProductos{
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.mainProductos h4{
+    font-weight: bold;   
+    text-decoration: underline;
+    text-align: center;
+}
+
+.mainProductos p{
+    text-align: justify;
+}
+
+.contenedorAlimento{
+    padding-bottom: 2%;
+}
+
+.cuadroAlimentoBalanceado{
+    padding-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    background-color: #f1d79d;
+    border-radius: 20px;
+}
+
+.containerProductos{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+.imgBalanceadoPerro{
+    width: 80%;
+}
+
+.imgBalanceadoGato{
+    width: 95%;
+}
+
+.contenedorAyJ{
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.cuadroAccesoriosyJuguetes{
+    padding-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    background-color: #f1d79d;
+    border-radius: 20px;
+}
+
+.imgAccesorios{
+    width: 73%;
+}
+
+.imgJuguetes{
+    width: 90%;
+}
+
+.contenedorPyM{
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.cuadroPipetasyMas{
+    padding-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    background-color: #f1d79d;
+    border-radius: 20px;
+}
+
+.imgPipeta{
+    width: 97%;
+} 
+
+.imgVacuna{
+    width: 100%;
+}
+ 
+
+/* Main Servicios */
+.mainServicios{
+    padding-top: 2%;
+}
+
+.mainServicios h4{
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.cardServicios{
+    background-color: #f1d79d;
+    padding-top: 1%;
+}
+
+.serviciosVeterinaria{
+    padding: 3%;
+}
+
+.serviciosPeluqueria{
+    padding: 3%;
+}
+
+.imgServVeterinaria{
+    width: 100%;
+    border-radius: 20px;  
+}
+
+.imgPeluqueria{
+    width: 80%;
+    border-radius: 20px;
+}
+
+
+/* Main Conocenos */
+.mainConocenos{
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.cardQuique{
+    background-color: #f1d79d;
+    text-align: justify;
+    padding: 1% 5% 1% 5%;
+}
+
+.cardCarra{
+    background-color: #f1d79d;
+    text-align: justify;
+    padding: 1% 5% 1% 5%;
+}
+
+
+
+/* Main Contacto */
+.contenidoContacto{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+}
+
+.infoContacto{
+    font-size: larger;
+    font-style: bold;
+    text-align: center;
+    padding: 3%;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.mapaContacto{
+    width: 200%;
+    height: 18.75rem;
+    grid-column: 4 / 6;
+    grid-row: 1 / 3; 
+}
+
+
+/*Footer*/
+footer{
+    background-color: #87aeb6;
+    color: aliceblue;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.contenidoFooter {
+    display: grid;
+    grid-template-areas:
+        "instagram whatsapp"
+        "facebook map";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    padding-top: 1%;
+    gap: 5px;
+}
+
+.contenidoFooter img {
+    width: 20px; 
+    height: 20px;
+}
+
+.instagram {
+    grid-area: instagram;
+    display: flex;
+    flex-direction: row;
+
+    .pig {
+        padding-left: 2%;
+    }
+}
+
+.facebook {
+    grid-area: facebook;
+    display: flex;
+    flex-direction: row;
+
+    .pfb {
+        text-align: center;
+        padding-left: 2%;
+    }
+}
+
+.whatsapp {
+    grid-area: whatsapp;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    .pwp {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+}
+
+.map {
+    grid-area: map;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Media query para que el Footer sea responsive */
+@media (max-width: 768px) {
+    .contenidoFooter {
+        grid-template-areas:
+            "instagram"
+            "whatsapp"
+            "facebook"
+            "map";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 5px;
+
+        .whatsapp{
+            justify-content: flex-start;
+        }
+        
+        .map{
+            justify-content: flex-start;
+        }
+
+    }
+}
+
+
