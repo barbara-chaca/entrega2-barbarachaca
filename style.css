@@ -172,29 +172,76 @@ main{
     text-align: center;
 }
 
-.cardServicios{
+.serviciosVeterinarios{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+.textoVete{
+    padding-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
     background-color: #f1d79d;
-    padding-top: 1%;
-}
-
-.serviciosVeterinaria{
-    padding: 3%;
-}
-
-.serviciosPeluqueria{
-    padding: 3%;
-}
-
-.imgServVeterinaria{
-    width: 100%;
-    border-radius: 20px;  
-}
-
-.imgPeluqueria{
-    width: 80%;
     border-radius: 20px;
 }
 
+.imgServVeterinaria{
+    width: 50%;
+    border-radius: 20px;
+    margin-right: 2%;
+}
+
+.serviciosPeluqueria{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+.textoPelu{
+    padding-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    background-color: #f1d79d;
+    border-radius: 20px;
+}
+
+.imgPeluqueria{
+    width: 25%;
+    border-radius: 20px;
+    margin-left: 2%;
+}
+
+/* Responsive Servicios */
+@media screen and (max-width: 768px) {
+    .serviciosVeterinarios{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .imgServVeterinaria{
+      width: 85%;
+      height: 100%;
+      margin-top: 2%;
+    }
+
+    .serviciosPeluqueria{
+      flex-direction: column;
+      align-items: center;
+    } 
+
+    .imgPeluqueria{
+      width: 85%;
+      height: 100%;
+      margin-bottom: 2%;
+    }
+}
 
 /* Main Conocenos */
 .mainConocenos{
@@ -203,7 +250,84 @@ main{
     padding-right: 1%;
 }
 
-.cardQuique{
+.mainConocenos h1{
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.historiaQuique{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+.textoQuique{
+    padding-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    background-color: #f1d79d;
+    border-radius: 20px;
+}
+
+.imgQuique{
+    width: 50%;
+    border-radius: 20px;
+    margin-right: 2%;
+}
+
+.historiaCarras{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+.textoCarras{
+    padding-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    background-color: #f1d79d;
+    border-radius: 20px;
+}
+
+.imgCarras{
+    width: 40%;
+    border-radius: 20px;
+    margin-left: 2%;
+}
+
+/* Responsive Conocenos */
+@media screen and (max-width: 768px) {
+    .historiaQuique{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .imgQuique{
+      width: 85%;
+      height: 100%;
+      margin-top: 2%;
+    }
+
+    .historiaCarras{
+      flex-direction: column;
+      align-items: center;
+    } 
+
+    .imgCarras{
+      width: 85%;
+      height: 100%;
+      margin-bottom: 2%;
+    }
+}
+
+/*.cardQuique{
     background-color: #f1d79d;
     text-align: justify;
     padding: 1% 5% 1% 5%;
@@ -228,7 +352,7 @@ main{
 .imgCarras{
     width: 30%;
     border-radius: 20px;
-}
+}*/
 
 
 /* Main Contacto */
@@ -266,7 +390,7 @@ main{
     background-color: #f1d79d;
 }
 
-/* Responsive contacto */
+/* Responsive Contacto */
 @media screen and (max-width: 768px) {
     .horariosUbicacion {
       flex-direction: column;
@@ -347,7 +471,7 @@ footer{
     justify-content: flex-end;
 }
 
-/* Media query para que el Footer sea responsive */
+/* Responsive Footer */
 @media (max-width: 768px) {
     .contenidoFooter {
         grid-template-areas:
